@@ -1,0 +1,77 @@
+.introduce {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // height: 80%;
+  height: 100vh;
+  color: white;
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-basis: 700px;
+    margin: 0 20px;
+  }
+}
+
+.pic {
+  /* height: 30%; */
+  margin: 15px;
+}
+
+.pic img {
+  height: 250px;
+}
+
+.github {
+  font-size: 1.2rem;
+  margin-bottom: 1%;
+}
+
+.about {
+  h1 {
+    font-size: 2.5rem;
+    margin: 10px;
+  }
+
+  h2 {
+    margin: 10px;
+  }
+}
+.introduce {
+  a {
+    text-decoration: none;
+  }
+  .progress {
+    margin: 30px 0 0 10px;
+  }
+  .iconPanel {
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-evenly;
+    @media (max-width: 820px) {
+      flex-wrap: wrap;
+      min-width: 50px;
+      justify-content: center;
+    }
+  }
+  .link {
+    position: relative;
+    &::after {
+      content: "";
+      background-color: #fff;
+      height: 1px;
+      width: 60px;
+      position: absolute;
+      top: 50%;
+      left: 110%;
+      transform: translateY(-50%);
+      transition: 0.5s ease;
+    }
+    &:hover:after {
+      width: 100px;
+    }
+  }
+}
