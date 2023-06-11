@@ -5,6 +5,7 @@ import NavBar from "@/components/layout/NavBar";
 
 import classes from "@/styles/Home.module.scss";
 import About from "@/components/layout/About";
+import Project from "@/components/layout/Project";
 
 //기술 타입
 interface Tech {
@@ -44,7 +45,7 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 const Home = (props: Props) => {
-  const aboutRef = useRef<null | HTMLDivElement>(null); 
+  const aboutRef = useRef<null | HTMLDivElement>(null);
   // const [height, setHeight] = useState(0);
 
   // const measuredRef = useCallback((node: any) => {
@@ -55,7 +56,7 @@ const Home = (props: Props) => {
 
   // const scrollToRefTT = useCallback(() => {
   //   console.log(aboutRef.current);
-     
+
   // }, []);
 
   //스크롤 이동
@@ -79,6 +80,7 @@ const Home = (props: Props) => {
         </article>
       </section>
       <About ref={aboutRef} tData={props.tech} />
+      <Project />
     </main>
   );
 };
