@@ -9,10 +9,10 @@ interface Props {
   data: Tech;
 }
 
-const TechItem = ({data}:{data:Tech}) => {
+const TechItem = (props: { data: Tech }) => {
   return (
     <div className={classes.icon}>
-      <span>{data.name}</span>
+      <span>{props.data.name}</span>
     </div>
   );
 };

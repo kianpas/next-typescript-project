@@ -9,9 +9,9 @@ interface Tech {
   name: string;
 }
 
-const About = ({ tData }: { tData: Tech[]}, ref:any) => {
+const About = (props: { tData: Tech[] }) => {
   return (
-    <section className={classes.introduce} id="about" ref={ref}>
+    <section className={classes.introduce} id="about">
       <article>
         <div className={classes.about}>
           <h1>ABOUT ME</h1>
@@ -34,7 +34,7 @@ const About = ({ tData }: { tData: Tech[]}, ref:any) => {
           <h3>Current Progress</h3>
         </div>
         <div className={classes.iconPanel}>
-          {tData.map((data) => (
+          {props.tData.map((data) => (
             <TechItem key={data.id} data={data} />
           ))}
         </div>

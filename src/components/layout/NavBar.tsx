@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Fragment, useState } from "react";
 import classes from "@/styles/NavBar.module.scss";
 
-const NavBar = (props: any) => {
+const NavBar = () => {
   return (
     <Fragment>
       <header className={classes.header}>
@@ -16,14 +16,11 @@ const NavBar = (props: any) => {
               <Link href="#about">ABOUT</Link>
             </li>
             <li>
-              <Link href="/project">PROJECT</Link>
+              <Link href="#experience">EXPERIENCE</Link>
             </li>
             <li>
-              <Link href="/roadmap">ROAD MAP</Link>
+              <Link href="#project">PROJECT</Link>
             </li>
-            {/* <li>
-              <Link href="/hobby">HOBBY</Link>
-            </li> */}
             <li>
               <Link href="/contact">CONTACT</Link>
             </li>
