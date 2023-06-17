@@ -85,7 +85,8 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 const Home = (props: Props) => {
-  const aboutRef = useRef<null | HTMLDivElement>(null);
+  //페이지 스크롤 기능 주석 처리
+  // const aboutRef = useRef<null | HTMLDivElement>(null);
   // const [height, setHeight] = useState(0);
 
   // const measuredRef = useCallback((node: any) => {
@@ -100,15 +101,14 @@ const Home = (props: Props) => {
   // }, []);
 
   //스크롤 이동
-  const scrollToRef = () => {
-    aboutRef?.current?.scrollIntoView({ behavior: "smooth" });
-  };
+  // const scrollToRef = () => {
+  //   aboutRef?.current?.scrollIntoView({ behavior: "smooth" });
+  // };
   return (
     <main>
       <NavBar />
       {/* <button onClick={scrollToRef}>12121212</button> */}
-      <section className={classes.home} ref={aboutRef}>
-        {/* <h1>{height}</h1> */}
+      <section className={classes.home}>
         <article>
           <h1>
             <span>Hello!</span>

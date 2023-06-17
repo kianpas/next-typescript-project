@@ -44,14 +44,14 @@ const About = (props: { tData: Tech[] }) => {
             <a href="https://github.com/kianpas">GO TO GITHUB</a>
           </span>
         </p>
-        <p className={classes.github}>
+        {/* <p className={classes.github}>
           <i className="fas fa-portrait fa-1x"></i>
           <span className={classes.link}>
             <a href="https://wood-bird-d9d.notion.site/2593947faddd44588573e2d92e6f0262">
               GO TO NOTION
             </a>
           </span>
-        </p>
+        </p> */}
       </article>
     </section>
   );
