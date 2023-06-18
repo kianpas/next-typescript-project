@@ -15,7 +15,7 @@ const About = (props: { tData: Tech[] }) => {
       <article>
         <div className={classes.about}>
           <h1>ABOUT ME</h1>
-          <h2>Wannabe Developer</h2>
+          {/* <h2>Wannabe Developer</h2> */}
           <p>
             현재 공부하고 있는 개발자 이운산입니다. <br />
             어렸을 때 작은 상을 받은 계기로 개발자의 꿈을 꾸었으나 꿈은 꿈,

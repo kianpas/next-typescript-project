@@ -5,6 +5,7 @@ import NavBar from "@/components/layout/NavBar";
 
 import classes from "@/styles/Home.module.scss";
 import About from "@/components/layout/About";
+import Experience from "@/components/layout/Experience";
 import Project from "@/components/layout/Project";
 
 //기술 타입
@@ -120,6 +121,7 @@ const Home = (props: Props) => {
         </article>
       </section>
       <About tData={props.tech} />
+      <Experience />
       <Project projectData={props.project} />
     </main>
   );

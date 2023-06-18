@@ -8,19 +8,19 @@ interface IProject {
   link: string;
 }
 
-const Project = (props: { projectData: IProject[] }) => {
+const Experience = () => {
   return (
-    <section className={classes.list} id="project">
+    <section className={classes.list} id="experience">
       <article>
         <div className={classes.project}>
-          <h1>PROJECT</h1>
-          {props.projectData.map((data) => (
+          <h1>EXPERIENCE</h1>
+          {/* {props.projectData.map((data) => (
             <ProjectItem key={data.id} data={data} />
-          ))}
+          ))} */}
         </div>
       </article>
     </section>
   );
 };
 
-export default Project;
+export default Experience;
