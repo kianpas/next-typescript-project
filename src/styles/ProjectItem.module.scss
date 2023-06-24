@@ -15,8 +15,8 @@
   color: #fff;
   text-align: center;
   img {
-    height: 20rem;
-    width: 20rem;
+    height: 18rem;
+    width: 18rem;
     margin: 10px;
   }
 
@@ -30,10 +30,12 @@
   text-align: center;
   // text-align: end;
   color: #fff;
+  width: 10rem;
+  justify-content: center;
 }
 
 .link a {
-  padding: 5px;
+  padding: 2px;
   text-decoration: none;
   transition: 0.5s;
 }

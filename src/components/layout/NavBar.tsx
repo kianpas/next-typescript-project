@@ -6,7 +6,7 @@ const NavBar = () => {
   return (
     <Fragment>
       <header className={classes.header}>
-        <div className={classes.logo}>Reindeer</div>
+        <div className={classes.logo}></div>
         <nav>
           <ul>
             <li>

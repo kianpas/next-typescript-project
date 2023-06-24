@@ -56,4 +56,4 @@ const About = (props: { tData: Tech[] }) => {
     </section>
   );
 };
-export default React.forwardRef(About);
+export default About;
