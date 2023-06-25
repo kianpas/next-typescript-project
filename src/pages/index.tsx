@@ -55,27 +55,27 @@ export const getStaticProps: GetStaticProps = async () => {
     {
       id: "01",
       name: "세미 프로젝트",
-      img: "/images/semiproject.jpg",
+      img: "/image/semiProject.jpg",
       link: "https://github.com/kianpas/frogmarket",
     },
     {
       id: "02",
       name: "파이널 프로젝트",
-      img: "/images/finalproject.png",
+      img: "/image/finalproject.png",
       link: "https://github.com/kianpas/final-pjt-upmu",
     },
     {
       id: "03",
       name: "홈페이지 프로젝트",
-      img: "/images/homeproject.jpg",
+      img: "/image/homeproject.jpg",
       link: "https://github.com/kianpas/kianpas.github.io",
     },
-    {
-      id: "04",
-      name: "React Homepage",
-      img: "/images/reacthome.png",
-      link: "https://github.com/kianpas/homepage-project",
-    },
+    // {
+    //   id: "04",
+    //   name: "React Homepage",
+    //   img: "/image/reacthome.png",
+    //   link: "https://github.com/kianpas/homepage-project",
+    // },
   ];
   return {
     props: {
