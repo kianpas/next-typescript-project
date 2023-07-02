@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { Fragment, useRef, createRef, useCallback, useState } from "react";
+import {
+  Fragment,
+  useRef,
+  createRef,
+  useCallback,
+  useState,
+  useEffect,
+} from "react";
 import { GetStaticProps } from "next";
 import NavBar from "@/components/layout/NavBar";
 
@@ -86,6 +93,24 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 const Home = (props: Props) => {
+  const [sideMenu, setSideMenu] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  const menuHandler = () => {
+    setSideMenu(true);
+
+    if (sideMenu) {
+      setSideMenu(false);
+    }
+  };
+
+  const backDropHandler = () => {
+    setSideMenu(false);
+  };
+
   //페이지 스크롤 기능 주석 처리
   // const aboutRef = useRef<null | HTMLDivElement>(null);
   // const [height, setHeight] = useState(0);
@@ -107,8 +132,18 @@ const Home = (props: Props) => {
   // };
   return (
     <main>
-      <NavBar />
-      {/* <button onClick={scrollToRef}>12121212</button> */}
+      <NavBar sideMenu={sideMenu} />
+      {/* <button onClick={scrollToRef}>12121212</button> */}{" "}
+      {!sideMenu ? (
+        <div className={classes.icon}>
+          <img src="/image/menu.png" onClick={menuHandler} />
+        </div>
+      ) : (
+        ""
+      )}
+      {sideMenu && (
+        <div className={classes.backdrop} onClick={backDropHandler}></div>
+      )}
       <section className={classes.home}>
         <article>
           <h1>

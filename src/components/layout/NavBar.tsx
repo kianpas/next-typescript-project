@@ -2,10 +2,16 @@ import Link from "next/link";
 import { Fragment, useState } from "react";
 import classes from "@/styles/NavBar.module.scss";
 
-const NavBar = () => {
+const NavBar = (props: { sideMenu: boolean }) => {
   return (
     <Fragment>
-      <header className={classes.header}>
+      <header
+        className={
+          props.sideMenu
+            ? `${classes.header} ${classes.toggle}`
+            : `${classes.header}`
+        }
+      >
         <div className={classes.logo}></div>
         <nav>
           <ul>
